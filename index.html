@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLAGS flashcards</title>
+  <script type="module" src="app.js?t=29228333" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="flashcardContainer" class="centered hidden">
+    <h2>pozostało <span id="counter"></span> fiszek</h2>
+    <div id="flashcard"></div>
+  </div>
+
+  <form id="settingsForm" class="centered">
+    <h2>nauka flag</h2>
+    <p>
+      <label for="lang">Nazwy krajów w języku:</label>
+      <select id="lang" name="lang">
+        <option value="pol" selected>polskim</option>
+        <option value="eng">angielskim</option>
+      </select>
+    </p>
+    <p>
+      <label for="continent">Kontynent:</label>
+      <select id="continent" name="continent">
+        <option value="all">wszystkie</option>
+        <option value="Europe" selected>Europa</option>
+        <option value="Asia">Azja</option>
+        <option value="North America">Ameryka północna</option>
+        <option value="South America">Ameryka południowa</option>
+        <option value="Africa">Afryka</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+    </p>
+    <p>
+      <label for="area">Powierzchnia:</label>
+      <select id="area" name="area">
+        <option value="0">wszystkie</option>
+        <option value="100000">> 100 km<sup>2</sup></option>
+        <option value="300000" selected>> 300 km<sup>2</sup></option>
+      </select>
+    </p>
+    <p>
+      <label for="choices">Odpowiedzi do wyboru:</label>
+      <select id="choices" name="choices">
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5" selected>5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+    </p>
+    <p>
+      <label for="repeatInc">Powtarzaj niezgadnięte:</label>
+      <select id="repeatInc" name="repeatInc">
+        <option value="0">nie powtarzaj</option>
+        <option value="-1" selected>do skutku</option>
+        <option value="1">1 raz</option>
+        <option value="2">2 razy</option>
+        <option value="3">3 razy</option>
+        <option value="4">4 razy</option>
+        <option value="5">5 razy</option>
+      </select>
+    </p>
+    <p>
+      <label for="repeatCor">Powtarzaj zgadnięte:</label>
+      <select id="repeatCor" name="repeatCor">
+        <option value="0" selected>nie powtarzaj</option>
+        <option value="1">1 raz</option>
+        <option value="2">2 razy</option>
+        <option value="3">3 razy</option>
+        <option value="4">4 razy</option>
+        <option value="5">5 razy</option>
+      </select>
+    </p>
+    <p>
+      <button type="submit">rozpocznij nową grę</button>
+    </p>
+
+  </form>
+</body>
+</html>

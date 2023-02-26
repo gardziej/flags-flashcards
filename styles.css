@@ -1,0 +1,67 @@
+body {
+  background-color: rgb(220, 220, 220);
+  font-family: 'Roboto', sans-serif;
+}
+
+.centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#flashcardContainer {
+  width: 500px;
+  text-align: center;
+}
+
+#flashcardContainer h2 {
+  margin: 0 0 10px 0;
+  font-size: 110%;
+}
+
+#flashcard img {
+  width: 100%;
+  border: 1px solid rgb(98, 98, 98);
+}
+
+#flashcard #choices button {
+  margin: 0 10px;
+}
+
+#flashcard #choices button.answer {
+  font-weight: bold;
+}
+
+#settingsForm, #flashcardContainer {
+  background: white;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+#settingsForm h2 {
+  text-align: center;
+}
+
+#settingsForm label {
+  width: 250px;
+  display: inline-block;
+}
+
+#settingsForm select {
+  width: 200px;
+  display: inline-block;
+  font-size: 20px;
+  border: 1px solid rgb(178, 178, 178);
+}
+
+#settingsForm button {
+  display: block;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
